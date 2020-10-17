@@ -1,31 +1,35 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import data from "../data.json";
+import "./Project.css";
 
 export default function Project(props) {
-    console.log("props :", props);
-    let { id, year, title, img, technologies } = props.proj;
-
-    // let proj;
-    // data.forEach((project) => {
-    //     if (project.title === props.location.pathname.slice(9)) {
-    //         console.log("project :", project);
-    //         return (proj = project);
-    //     }
-    // });
-    // let { id, year, title, img, technologies } = proj;
+    let proj;
+    data.forEach((project) => {
+        if (project.title === props.location.pathname.slice(9)) {
+            return (proj = project);
+        }
+    });
+    let { year, title, img, description } = proj;
 
     return (
-        <div>
+        <div className="project-card-info-container">
             <Link to="/">
                 <button>Back to Works</button>
             </Link>
-            <p>{title}</p>
-            <h1>testttt</h1>
-            <p>testttt</p>
-            <p>testttt</p>
-            <p>testttt</p>
+            <p>{year}</p>
+            <h1>{title}</h1>
+            <h3>{description}</h3>
+            <div className="project-card-img-container">
+                <picture>
+                    <img
+                        className="project-img-info"
+                        src={"." + img}
+                        alt="project"
+                    />
+                </picture>
+            </div>
         </div>
     );
 }

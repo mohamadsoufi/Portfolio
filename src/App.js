@@ -12,7 +12,8 @@ function App() {
     data.forEach((proj) => {
         return (project = proj);
     });
-    let { id, year, title, img, technologies } = project;
+    let { id, year, title, img, technologies, description } = project;
+
     return (
         <BrowserRouter>
             <div className="App">
@@ -22,14 +23,15 @@ function App() {
                 <main className="App-main">
                     <Route exact path="/" component={Home} />
                     <Route exact path="/" component={WorksList} />
-
-                    <Route
-                        exact
-                        path={`/project/${title}`}
-                        render={() => <Project proj={project} />}
-                    />
+                    <Route path={`/project/:title`} component={Project} />
                 </main>
-                <footer></footer>
+                <footer>
+                    <a href="https://github.com/mohamadsoufi">Github </a>
+
+                    <a href="https://www.linkedin.com/in/mohamad-soufi/">
+                        LinkedIn
+                    </a>
+                </footer>
             </div>
         </BrowserRouter>
     );

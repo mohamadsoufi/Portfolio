@@ -1,11 +1,20 @@
 import React from "react";
+import "./Header.css";
 
 export default function Header() {
     return (
-        <div>
-            <a href="/#">
-                <p>WORKS</p>
-            </a>
+        <div className="container">
+            <div>
+                <img className="avatar" src="../avatar.jpg" alt="avatar" />
+            </div>
+            <div className="header-links">
+                <a href="/#">
+                    <p>WORKS</p>
+                </a>
+                <a href="/#">
+                    <p>RESUME</p>
+                </a>
+            </div>
         </div>
     );
 }

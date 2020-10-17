@@ -1,8 +1,7 @@
 import React from "react";
-// import Project from "../components/Project";
 import "./ProjectCard.css";
 
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function ProjectCard(props) {
     const { year, title, img, technologie, bgColor } = props;

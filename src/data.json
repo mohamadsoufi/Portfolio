@@ -3,6 +3,7 @@
         "_id": "1",
         "year": "2020",
         "title": "Neighbours",
+        "description": "With this e-commerce App, you can make an account and then start offering or requesting food with your Neighbours, you can also see their offers and requests on google maps.",
         "img": "default",
         "technologies": ["svg", "svg", "svg"],
         "bgColor": "#B4C4AE"
@@ -11,6 +12,7 @@
         "_id": "2",
         "year": "2020",
         "title": "Imageboard",
+        "description": "With Imageboard App, you can browse some last recently uploaded images from users and you can add your own images and comments on the image card.",
         "img": "default",
         "technologies": ["svg", "svg", "svg"],
         "bgColor": "#A2ABAB"
@@ -19,6 +21,7 @@
         "_id": "3",
         "year": "2020",
         "title": "Petition",
+        "description": "Online Indoor petition where users can login and sign the petition and see who also signed it already.",
         "img": "./petition.png",
         "technologies": ["svg", "svg"],
         "bgColor": "#7D869C"
