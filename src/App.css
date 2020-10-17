@@ -33,6 +33,11 @@ html {
     color: gray;
 }
 
+.profile-title p {
+    font-weight: 700;
+    font-size: 25px;
+}
+
 .profile-description {
     width: 50%;
 }
