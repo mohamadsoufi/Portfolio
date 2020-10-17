@@ -22,7 +22,6 @@ export default function ProjectCard(props) {
                     <img className="project-img" src={img} alt="project" />
                 </Link>
             </picture>
-            {/* <Route path={`/project/${title}`} component={Project} /> */}
         </div>
     );
 }

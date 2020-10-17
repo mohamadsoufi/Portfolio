@@ -1,0 +1,64 @@
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #e14631;
+}
+
+.title img {
+    width: 220px;
+    position: absolute;
+    top: 120px;
+}
+
+.title h1,
+.title h3 {
+    color: white;
+    margin: 2em 0;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: #e14631;
+}
+
+.content-container {
+    display: flex;
+    text-align: start;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-side {
+    background-color: #2a2f31f6;
+    padding: 70px 0 0 20px;
+    width: 40%;
+}
+
+.left-side p,
+li {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.left-side ul {
+    padding: 10px 0 0 10px;
+}
+
+.right-side {
+    padding: 70px 0;
+}
+
+.right-side p,
+h3 {
+    color: #e14631;
+    font: 900;
+    letter-spacing: 1px;
+}
+
+.right-side li,
+h4 {
+    color: black;
+    font: 900;
+}

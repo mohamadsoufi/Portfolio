@@ -11,7 +11,7 @@ export default function Header() {
                 <a href="/#">
                     <p>WORKS</p>
                 </a>
-                <a href="/#">
+                <a href="/resume">
                     <p>RESUME</p>
                 </a>
             </div>

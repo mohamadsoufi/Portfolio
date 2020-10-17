@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Project from "./components/Project";
+import Resume from "./components/Resume";
 import WorksList from "./components/WorksList";
 import data from "./data.json";
 
@@ -24,6 +25,7 @@ function App() {
                     <Route exact path="/" component={Home} />
                     <Route exact path="/" component={WorksList} />
                     <Route path={`/project/:title`} component={Project} />
+                    <Route path={`/resume`} component={Resume} />
                 </main>
                 <footer>
                     <a href="https://github.com/mohamadsoufi">Github </a>
