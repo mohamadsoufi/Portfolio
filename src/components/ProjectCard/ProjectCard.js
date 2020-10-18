@@ -19,7 +19,7 @@ export default function ProjectCard(props) {
             </div>
             <picture className="project-card-picture">
                 <Link to={`/project/${title}`}>
-                    <img className="project-img" src={img} alt="project" />
+                    <img className="project-img" src={img} alt={title} />
                 </Link>
             </picture>
         </div>

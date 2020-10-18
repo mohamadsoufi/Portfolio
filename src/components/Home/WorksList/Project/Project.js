@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import data from "../data.json";
+import data from "../../../../data.json";
 import "./Project.css";
 
 export default function Project(props) {

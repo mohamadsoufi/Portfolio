@@ -1,31 +1,22 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Project from "./components/Project";
-import Resume from "./components/Resume";
-import WorksList from "./components/WorksList";
-import data from "./data.json";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Project from "./components/Home/WorksList/Project/Project";
+import Resume from "./components/Resume/Resume";
 
 function App() {
-    let project;
-    data.forEach((proj) => {
-        return (project = proj);
-    });
-    let { id, year, title, img, technologies, description } = project;
-
     return (
         <BrowserRouter>
             <div className="App">
-                <header className="App-header">
-                    <Header />
-                </header>
+                <Header />
                 <main className="App-main">
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/" component={WorksList} />
-                    <Route path={`/project/:title`} component={Project} />
-                    <Route path={`/resume`} component={Resume} />
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route path={`/project/:title`} component={Project} />
+                        <Route path={`/resume`} component={Resume} />
+                    </Switch>
                 </main>
                 <footer>
                     <a href="https://github.com/mohamadsoufi">Github </a>

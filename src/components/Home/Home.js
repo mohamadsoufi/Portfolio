@@ -1,8 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { Route } from "react-router-dom";
+import WorksList from "./WorksList/WorksList";
+import "./Home.css";
 
 export default function Home() {
     return (
-        <div>
+        <Fragment>
             <div className="profile">
                 <div className="profile-title">
                     <h1>Greetings, i am Mohamad.</h1>
@@ -32,6 +35,7 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-        </div>
+            <Route exact path="/" component={WorksList} />
+        </Fragment>
     );
 }

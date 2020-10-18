@@ -12,47 +12,6 @@ html {
     padding: 50px 80px;
 }
 
-.profile {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 50px 20px 0px;
-    padding-bottom: 50px;
-    text-align: start;
-    font-size: 20px;
-    padding-bottom: 50px;
-}
-
-.profile-title {
-    width: 50%;
-}
-
-.profile-title h1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: gray;
-}
-
-.profile-title p {
-    font-weight: 700;
-    font-size: 25px;
-}
-
-.profile-description {
-    width: 50%;
-}
-
-.profile-description p {
-    width: 95%;
-    line-height: 1.9;
-    font-weight: 500;
-}
-
-.profile-description strong {
-    color: gray;
-    font-weight: 800;
-    font-size: 1.3em;
-}
 .App-header {
     background-color: #282c34;
     min-height: 100px;
@@ -60,7 +19,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: 10px;
     color: white;
 }
 

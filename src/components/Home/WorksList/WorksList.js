@@ -1,6 +1,6 @@
 import React from "react";
-import Project from "./ProjectCard";
-import data from "../data.json";
+import Project from "../../ProjectCard/ProjectCard";
+import data from "../../../data.json";
 
 export default function WorksList() {
     return (
