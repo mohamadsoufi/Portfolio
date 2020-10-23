@@ -31,3 +31,14 @@ html {
     margin: 100px auto;
     padding: 50px 25px;
 }
+
+footer {
+    display: flex;
+    justify-content: end;
+    margin: 15px 20px;
+    width: 100%;
+}
+
+footer svg {
+    margin: 0 10px;
+}

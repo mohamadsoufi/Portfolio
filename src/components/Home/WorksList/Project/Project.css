@@ -52,3 +52,8 @@ button:hover {
     height: auto;
     object-fit: contain;
 }
+
+.project-card-icons {
+    height: 45px;
+    margin: 0 5px;
+}

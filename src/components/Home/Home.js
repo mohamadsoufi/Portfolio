@@ -26,11 +26,11 @@ export default function Home() {
                     <p>
                         {" "}
                         <strong>Frontend Tech :</strong> React, Vue, jQuery,
-                        Bootstrap, CSS
+                        Handlebars, CSS
                     </p>
                     <p>
                         {" "}
-                        <strong> Backend Tech :</strong> Node.js, PHP, Express,
+                        <strong> Backend Tech :</strong> Node.js, Express,
                         MongoDB, SQL
                     </p>
                 </div>
