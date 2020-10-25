@@ -4,12 +4,14 @@
         "year": "2020",
         "title": "Neighbours",
         "description": "With this e-commerce App, you can make an account and then start offering or requesting food with your Neighbours, you can also see their offers and requests on google maps.",
-        "img": "./petition.png",
+        "img": "/petition.png",
+        "type": "Full Stack Development",
         "technologies": [
-            "./icons/react.png",
-            "./icons/javascript.png",
-            "./icons/nodejs.png"
+            "/icons/react.png",
+            "/icons/javascript.png",
+            "/icons/nodejs.png"
         ],
+
         "bgColor": "#B4C4AE"
     },
     {
@@ -17,11 +19,12 @@
         "year": "2020",
         "title": "Imageboard",
         "description": "With Imageboard App, you can browse some last recently uploaded images from users and you can add your own images and comments on the image card.",
-        "img": "./petition.png",
+        "img": "/petition.png",
+        "type": "Full Stack Development",
         "technologies": [
-            "./icons/react.png",
-            "./icons/javascript.png",
-            "./icons/nodejs.png"
+            "/icons/javascript.png",
+            "/icons/react.png",
+            "/icons/nodejs.png"
         ],
         "bgColor": "#A2ABAB"
     },
@@ -30,11 +33,12 @@
         "year": "2020",
         "title": "Petition",
         "description": "Online Indoor petition where users can login and sign the petition and see who also signed it already.",
-        "img": "./petition.png",
+        "img": "/petition.png",
+        "type": "Full Stack Development",
         "technologies": [
-            "./icons/react.png",
-            "./icons/javascript.png",
-            "./icons/nodejs.png"
+            "/icons/react.png",
+            "/icons/javascript.png",
+            "/icons/nodejs.png"
         ],
         "bgColor": "#7D869C"
     }

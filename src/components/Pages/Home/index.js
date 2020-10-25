@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import { Route } from "react-router-dom";
 import WorksList from "./WorksList/WorksList";
 import "./Home.css";
 
@@ -8,7 +7,7 @@ export default function Home() {
         <Fragment>
             <div className="profile">
                 <div className="profile-title">
-                    <h1>Greetings, i am Mohamad.</h1>
+                    <h1>Greetings, I am Mohamad.</h1>
                     <p>A Web Developer</p>
                     <p> from Berlin.</p>
                 </div>
@@ -35,7 +34,7 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-            <Route exact path="/" component={WorksList} />
+            <WorksList />
         </Fragment>
     );
 }

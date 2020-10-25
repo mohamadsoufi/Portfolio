@@ -23,11 +23,11 @@ button:hover {
     font-weight: 500;
 }
 
-.project-card-info-container {
+.projectPage-info-container {
     text-align: start;
 }
 
-.project-card-img-container {
+.projectPage-img-container {
     max-width: 1300px;
     margin: 40px auto;
     padding: 5px;
@@ -42,18 +42,13 @@ button:hover {
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.48);
 }
 
-.project-card-img-container:hover {
+.projectPage-img-container:hover {
     transform: scale(1.02);
 }
 
-.project-img-info {
+.projectPage-img {
     width: 100%;
     /* position: absolute; */
     height: auto;
     object-fit: contain;
-}
-
-.project-card-icons {
-    height: 45px;
-    margin: 0 5px;
 }

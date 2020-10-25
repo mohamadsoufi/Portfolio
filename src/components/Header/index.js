@@ -6,11 +6,11 @@ export default function Header() {
         <header className="App-header">
             <div className="container">
                 <div>
-                    <img className="avatar" src="../avatar.jpg" alt="avatar" />
+                    <img className="avatar" src="/avatar.jpg" alt="avatar" />
                 </div>
                 <div className="header-links">
                     <a href="/#">
-                        <p>WORKS</p>
+                        <p>HOME</p>
                     </a>
                     <a href="/resume">
                         <p>RESUME</p>

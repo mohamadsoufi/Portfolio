@@ -6,7 +6,7 @@ export default function Resume() {
         <div>
             <div className="title">
                 <picture>
-                    <img src="./avatar.jpg" alt="avatar" />
+                    <img src="/avatar.jpg" alt="avatar" />
                 </picture>
                 <div>
                     <h1>MOHAMAD SOUFI</h1>
@@ -41,7 +41,6 @@ export default function Resume() {
                         mail: mohamad.soufi@outlook.com
                         <br /> Mobile: +49 157-864-33517 <br /> Adress: Berlin,
                         Germany
-                        <br /> Social:
                     </p>
                     <br />
 
@@ -74,15 +73,28 @@ export default function Resume() {
                     <br />
                     <h4>RIDER</h4>
                     <p>Foodora.Co | 2018 - 2019</p>
+                    <h5>Delivering your pizza on a rainy winter night</h5>
                     <br />
                     <h2>VOLUNTARY EXPERIENCE</h2>
                     <h4>DRIVER, WAITER, AND HR</h4>
                     <p>Soul | Syria | 2009 - 2010</p>
+                    <h5>
+                        Driver : transporting donations from donors to the
+                        storage facility
+                        <br /> Waiter : organize and serve donated food for
+                        people in needs.
+                        <br /> HR : collect data from families, and investigate
+                        their situation
+                    </h5>
                     <br />
                     <h4>FIELD SURVEYOR</h4>
                     <p>
                         Humanitarian Relief Foundation | Lebanon | 2012 - 2013
                     </p>
+                    <h5>
+                        Collecting data from the Syrian refugees and connect
+                        them with the NGOs
+                    </h5>
                     <br />
 
                     <h2>EDUCATION HISTORY</h2>
@@ -92,7 +104,9 @@ export default function Resume() {
                     </h3>
                     <ul>
                         <li>
-                            <a href="/#">Certificate</a>
+                            <a href="https://www.udemy.com/certificate/UC-SOJ0OMQR/">
+                                Certificate
+                            </a>
                         </li>
                         <li>
                             Full stack intensive web development bootcamp using:
@@ -107,12 +121,12 @@ export default function Resume() {
                             <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">
                                 Web Developer Bootcamp
                             </a>
-                        </li>
-                        <li>
+                            <br />{" "}
                             <a href="https://www.udemy.com/certificate/UC-SOJ0OMQR/">
-                                Certificate
+                                - Certificate
                             </a>
                         </li>
+
                         <li>
                             <a href="https://www.udemy.com/course/the-advanced-web-developer-bootcamp/">
                                 The Advanced Web Developer Bootcamp
