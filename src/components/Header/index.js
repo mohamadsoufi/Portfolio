@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -9,12 +10,12 @@ export default function Header() {
                     <img className="avatar" src="/avatar.jpg" alt="avatar" />
                 </div>
                 <div className="header-links">
-                    <a href="/#">
+                    <Link to="/#">
                         <p>HOME</p>
-                    </a>
-                    <a href="/resume">
+                    </Link>
+                    <Link to="/resume">
                         <p>RESUME</p>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </header>
