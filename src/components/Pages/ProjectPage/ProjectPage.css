@@ -48,7 +48,6 @@ button:hover {
 
 .projectPage-img {
     width: 100%;
-    /* position: absolute; */
     height: auto;
     object-fit: contain;
 }
