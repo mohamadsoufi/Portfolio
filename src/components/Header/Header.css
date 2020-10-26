@@ -1,0 +1,27 @@
+.App-header .avatar {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.App-header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    padding: 4px 0;
+}
+
+.App-header .header-links {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.App-header .header-links a {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 8px 10px;
+    color: white;
+}

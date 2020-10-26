@@ -1,0 +1,53 @@
+button {
+    color: white;
+    background-color: rgba(27, 27, 82, 0.945);
+    margin: 20px 0;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    height: 35px;
+    cursor: pointer;
+    transition: color 0.15s ease-in, color 0.15s ease-in;
+}
+
+button:hover {
+    color: gray;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.projectPage-info-container {
+    text-align: start;
+}
+
+.projectPage-img-container {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    cursor: pointer;
+    transition: transform 0.5s cubic-bezier(0.18, 0.89, 0.4, 1.03),
+        box-shadow 0.2s ease-in;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.48);
+}
+
+.projectPage-img-container:hover {
+    transform: scale(1.02);
+}
+
+.projectPage-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
