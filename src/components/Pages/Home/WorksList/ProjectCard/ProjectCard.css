@@ -33,14 +33,15 @@ a {
 }
 
 .project-img {
-    width: 600px;
-    height: 300px;
-    object-fit: cover;
+    width: 650px;
+    height: 400px;
+    object-fit: contain;
     padding: 1.5em;
 }
 
 .project-card-icons {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin: 0 5px;
+    filter: brightness(0.8);
 }

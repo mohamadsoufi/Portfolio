@@ -5,7 +5,7 @@ import data from "../../../data.json";
 import "./ProjectPage.css";
 
 export default function ProjectPage(props) {
-    const { year, title, img, description } = data.find(
+    const { year, title, img, description, github } = data.find(
         (project) => project.title === props.match.params.title
     );
 
@@ -18,7 +18,9 @@ export default function ProjectPage(props) {
             <h1>{title}</h1>
             <h3>{description}</h3>
             <div className="projectPage-img-container">
-                <img className="projectPage-img" src={img} alt={title} />
+                <a href={github}>
+                    <img className="projectPage-img" src={img} alt={title} />
+                </a>
             </div>
         </div>
     );
