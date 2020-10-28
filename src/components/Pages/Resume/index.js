@@ -103,11 +103,7 @@ export default function Resume() {
                         SPICED Academy | Berlin Germany | June - August 2020
                     </h3>
                     <ul>
-                        <li>
-                            <a href="https://www.udemy.com/certificate/UC-SOJ0OMQR/">
-                                Certificate
-                            </a>
-                        </li>
+                        <li> Certificate</li>
                         <li>
                             Full stack intensive web development bootcamp using:
                             <br />- javaScript,React Node,Express ,Postgress and
