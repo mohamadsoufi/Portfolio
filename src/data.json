@@ -67,6 +67,22 @@
             "/icons/socketio.png",
             "/icons/postgresql.png"
         ],
-        "bgColor": "#7D699C"
+        "bgColor": "#745E59"
+    },
+    {
+        "_id": "5",
+        "year": "2020",
+        "title": "Fashion Landing Page",
+        "description": "E-commerce landing page App, with Contact from and Newsletter signup.",
+        "img": "/projects-images/landingPage.png",
+        "type": "Front end Development",
+        "github": "https://github.com/mohamadsoufi/Fashion-Landing-Page",
+        "technologies": [
+            "/icons/javascript.png",
+            "/icons/css3.png",
+            "/icons/jquery.png",
+            "/icons/bootstrap.png"
+        ],
+        "bgColor": "#746C59"
     }
 ]

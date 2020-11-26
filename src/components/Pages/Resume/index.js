@@ -3,8 +3,8 @@ import "./Resume.css";
 
 export default function Resume() {
     return (
-        <div>
-            <div className="title">
+        <div className="resume__container">
+            <div className="title__resume">
                 <picture>
                     <img src="/avatar.jpg" alt="avatar" />
                 </picture>
@@ -38,7 +38,7 @@ export default function Resume() {
                     <h2>CONTACT DETAILS</h2>
 
                     <p>
-                        mail: mohamad.soufi@outlook.com
+                        Mail: mohamad.soufi@outlook.com
                         <br /> Mobile: +49 157-864-33517 <br /> Adress: Berlin,
                         Germany
                     </p>

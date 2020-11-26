@@ -1,24 +1,24 @@
-.title {
+.title__resume {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #e14631;
 }
 
-.title img {
+.title__resume img {
     width: 220px;
     position: absolute;
     top: 120px;
 }
 
-.title h1,
-.title h3 {
+.title__resume h1,
+.title__resume h3 {
     color: white;
     margin: 2em 0;
     letter-spacing: 3px;
 }
 
-h2 {
+.resume__container h2 {
     color: #e14631;
 }
 
