@@ -1,8 +1,23 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import WorksList from "./WorksList/WorksList";
+import Contact from "./Contact";
 import "./Home.css";
 import ReactTypingEffect from "react-typing-effect";
 export default function Home() {
+    const [popup, setPopup] = useState(null);
+    useEffect(() => {
+        window.onscroll = function (ev) {
+            if (
+                window.innerHeight + window.scrollY >=
+                document.body.offsetHeight
+            ) {
+                setPopup("popup");
+            }
+        };
+    });
+    const handlePopup = (e) => {
+        setPopup(e);
+    };
     return (
         <Fragment>
             <div className="profile">
@@ -70,38 +85,35 @@ export default function Home() {
                             );
                         }}
                     />
-                    <br />
-                    <p>
-                        {" "}
-                        <strong> Backend Tech: </strong>
-                        <ReactTypingEffect
-                            text={["Node.js", "Express", "MongoDB", "SQL"]}
-                            cursorRenderer={(cursor) => <p>{cursor}</p>}
-                            speed={110}
-                            typingDelay={500}
-                            eraseDelay={1000 * 1}
-                            displayTextRenderer={(text, i) => {
-                                return (
-                                    <p>
-                                        {text.split("").map((char, i) => {
-                                            const key = `${i}`;
-                                            return (
-                                                <span
-                                                    key={key}
-                                                    style={{ color: "black" }}
-                                                >
-                                                    {char}
-                                                </span>
-                                            );
-                                        })}
-                                    </p>
-                                );
-                            }}
-                        />
-                    </p>
+                    <br /> <strong> Backend Tech: </strong>
+                    <ReactTypingEffect
+                        text={["Node.js", "Express", "MongoDB", "SQL"]}
+                        cursorRenderer={(cursor) => <p>{cursor}</p>}
+                        speed={110}
+                        typingDelay={500}
+                        eraseDelay={1000 * 1}
+                        displayTextRenderer={(text, i) => {
+                            return (
+                                <p>
+                                    {text.split("").map((char, i) => {
+                                        const key = `${i}`;
+                                        return (
+                                            <span
+                                                key={key}
+                                                style={{ color: "black" }}
+                                            >
+                                                {char}
+                                            </span>
+                                        );
+                                    })}
+                                </p>
+                            );
+                        }}
+                    />
                 </div>
             </div>
             <WorksList />
+            <Contact popup={popup} handlePopup={handlePopup} />
         </Fragment>
     );
 }

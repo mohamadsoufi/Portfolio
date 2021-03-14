@@ -40,3 +40,8 @@
     font-weight: 800;
     font-size: 1.3em;
 }
+
+.hide {
+    display: none;
+    background-color: rebeccapurple;
+}

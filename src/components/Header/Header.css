@@ -25,3 +25,15 @@
     margin: 8px 10px;
     color: white;
 }
+
+.img-container {
+    margin: auto 0;
+}
+.App-header-start {
+    transform: translate(0, -100px);
+}
+
+.App-header {
+    transform: translate(0, 0);
+    transition: transform 0.6s ease-in;
+}
