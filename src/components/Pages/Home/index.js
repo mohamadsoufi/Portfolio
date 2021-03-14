@@ -1,15 +1,38 @@
 import React, { Fragment } from "react";
 import WorksList from "./WorksList/WorksList";
 import "./Home.css";
-
+import ReactTypingEffect from "react-typing-effect";
 export default function Home() {
     return (
         <Fragment>
             <div className="profile">
                 <div className="profile-title">
-                    <h1>Greetings, I am Mohamad.</h1>
-                    <p>A Web Developer</p>
-                    <p> from Berlin.</p>
+                    <ReactTypingEffect
+                        text={[
+                            "Greetings, I am Mohamad. :) a Web Developer living in Berlin. ",
+                        ]}
+                        cursor={" "}
+                        speed={110}
+                        typingDelay={1000}
+                        eraseDelay={1000 * 60 * 120}
+                        displayTextRenderer={(text, i) => {
+                            return (
+                                <h1>
+                                    {text.split("").map((char, i) => {
+                                        const key = `${i}`;
+                                        return (
+                                            <span
+                                                key={key}
+                                                style={{ color: "gray" }}
+                                            >
+                                                {char}
+                                            </span>
+                                        );
+                                    })}
+                                </h1>
+                            );
+                        }}
+                    />
                 </div>
                 <div className="profile-description">
                     <p>
@@ -21,16 +44,60 @@ export default function Home() {
                         technologies and industry standards. I am eager to be a
                         part of a motivated team to bring fresh ideas and grow
                         together.
-                    </p>
+                    </p>{" "}
+                    <strong> Frontend Tech: </strong>
+                    <ReactTypingEffect
+                        text={["React", "Vue", "jQuery", "Handlebars", "CSS"]}
+                        cursorRenderer={(cursor) => <p>{cursor}</p>}
+                        speed={110}
+                        typingDelay={500}
+                        eraseDelay={1000 * 1}
+                        displayTextRenderer={(text, i) => {
+                            return (
+                                <p>
+                                    {text.split("").map((char, i) => {
+                                        const key = `${i}`;
+                                        return (
+                                            <span
+                                                key={key}
+                                                style={{ color: "black" }}
+                                            >
+                                                {char}
+                                            </span>
+                                        );
+                                    })}
+                                </p>
+                            );
+                        }}
+                    />
+                    <br />
                     <p>
                         {" "}
-                        <strong>Frontend Tech :</strong> React, Vue, jQuery,
-                        Handlebars, CSS
-                    </p>
-                    <p>
-                        {" "}
-                        <strong> Backend Tech :</strong> Node.js, Express,
-                        MongoDB, SQL
+                        <strong> Backend Tech: </strong>
+                        <ReactTypingEffect
+                            text={["Node.js", "Express", "MongoDB", "SQL"]}
+                            cursorRenderer={(cursor) => <p>{cursor}</p>}
+                            speed={110}
+                            typingDelay={500}
+                            eraseDelay={1000 * 1}
+                            displayTextRenderer={(text, i) => {
+                                return (
+                                    <p>
+                                        {text.split("").map((char, i) => {
+                                            const key = `${i}`;
+                                            return (
+                                                <span
+                                                    key={key}
+                                                    style={{ color: "black" }}
+                                                >
+                                                    {char}
+                                                </span>
+                                            );
+                                        })}
+                                    </p>
+                                );
+                            }}
+                        />
                     </p>
                 </div>
             </div>
