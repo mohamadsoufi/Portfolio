@@ -38,7 +38,7 @@ html {
 
 footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     margin: 15px 20px;
     width: 100%;
 }

@@ -1,23 +1,8 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment } from "react";
 import WorksList from "./WorksList/WorksList";
-import Contact from "./Contact";
 import "./Home.css";
 import ReactTypingEffect from "react-typing-effect";
 export default function Home() {
-    const [popup, setPopup] = useState(null);
-    useEffect(() => {
-        window.onscroll = function (ev) {
-            if (
-                window.innerHeight + window.scrollY >=
-                document.body.offsetHeight
-            ) {
-                setPopup("popup");
-            }
-        };
-    });
-    const handlePopup = (e) => {
-        setPopup(e);
-    };
     return (
         <Fragment>
             <div className="profile">
@@ -113,7 +98,11 @@ export default function Home() {
                 </div>
             </div>
             <WorksList />
-            <Contact popup={popup} handlePopup={handlePopup} />
+            <h2 className="popup">
+                <span role="img" aria-label="finger">
+                    <a href="/contact"> contact me</a> 💬
+                </span>
+            </h2>
         </Fragment>
     );
 }

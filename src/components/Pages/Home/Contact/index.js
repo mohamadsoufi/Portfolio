@@ -8,13 +8,15 @@ export default function Contact(props) {
     let { popup, contactPageProp } = props;
 
     const [contactPage, setContactPage] = useState("");
+    const [sendMsg, setSendMsg] = useState(false);
     useEffect(() => {
         if (contactPageProp !== null) {
             setContactPage(contactPageProp);
         } else {
             setContactPage("contactPage");
         }
-    }, [contactPageProp]);
+        // setSendMsg(false);
+    }, [contactPageProp, sendMsg]);
 
     function sendEmail(e) {
         e.preventDefault();
@@ -32,7 +34,8 @@ export default function Contact(props) {
                 },
                 (error) => {
                     console.log(error.text);
-                }
+                },
+                setSendMsg(true)
             );
     }
     let contactContainer = classNames({
@@ -69,6 +72,14 @@ export default function Contact(props) {
                     required
                 />
                 <input className="send-btn" type="submit" value="Send" />
+                {sendMsg && (
+                    <h1 className="send-msg">
+                        Sent!
+                        <span role="img" aria-label="finger">
+                            🥳
+                        </span>
+                    </h1>
+                )}
             </form>
         </div>
     );
