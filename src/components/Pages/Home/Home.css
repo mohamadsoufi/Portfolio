@@ -7,6 +7,8 @@
     text-align: start;
     font-size: 20px;
     padding-bottom: 50px;
+    height: 90vh;
+    hyphens: auto;
 }
 
 .profile-title {
@@ -17,7 +19,6 @@
 .profile-title h1 {
     font-size: 40px;
     font-weight: 700;
-    color: gray;
 }
 
 .profile-title p {
@@ -33,6 +34,11 @@
     width: 95%;
     line-height: 1.9;
     font-weight: 500;
+    font-family: "Crimson Text", serif;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    word-break: break-word;
+    filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.521));
 }
 
 .profile-description strong {

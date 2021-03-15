@@ -45,56 +45,67 @@ export default function Home() {
                         part of a motivated team to bring fresh ideas and grow
                         together.
                     </p>{" "}
-                    <strong> Frontend Tech: </strong>
-                    <ReactTypingEffect
-                        text={["React", "Vue", "jQuery", "Handlebars", "CSS"]}
-                        cursorRenderer={(cursor) => <p>{cursor}</p>}
-                        speed={110}
-                        typingDelay={500}
-                        eraseDelay={1000 * 1}
-                        displayTextRenderer={(text, i) => {
-                            return (
-                                <p>
-                                    {text.split("").map((char, i) => {
-                                        const key = `${i}`;
-                                        return (
-                                            <span
-                                                key={key}
-                                                style={{ color: "black" }}
-                                            >
-                                                {char}
-                                            </span>
-                                        );
-                                    })}
-                                </p>
-                            );
-                        }}
-                    />
-                    <br /> <strong> Backend Tech: </strong>
-                    <ReactTypingEffect
-                        text={["Node.js", "Express", "MongoDB", "SQL"]}
-                        cursorRenderer={(cursor) => <p>{cursor}</p>}
-                        speed={110}
-                        typingDelay={500}
-                        eraseDelay={1000 * 1}
-                        displayTextRenderer={(text, i) => {
-                            return (
-                                <p>
-                                    {text.split("").map((char, i) => {
-                                        const key = `${i}`;
-                                        return (
-                                            <span
-                                                key={key}
-                                                style={{ color: "black" }}
-                                            >
-                                                {char}
-                                            </span>
-                                        );
-                                    })}
-                                </p>
-                            );
-                        }}
-                    />
+                    <div style={{ marginTop: "190px" }}>
+                        <strong> Frontend Tech: </strong>
+                        <ReactTypingEffect
+                            text={[
+                                "React",
+                                "Vue",
+                                "jQuery",
+                                "Handlebars",
+                                "CSS",
+                            ]}
+                            cursorRenderer={(cursor) => <>{cursor}</>}
+                            speed={110}
+                            typingDelay={500}
+                            eraseDelay={1000 * 1}
+                            displayTextRenderer={(text, i) => {
+                                return (
+                                    <>
+                                        {text.split("").map((char, i) => {
+                                            const key = `${i}`;
+                                            return (
+                                                <span
+                                                    key={key}
+                                                    style={{ color: "black" }}
+                                                >
+                                                    {char}
+                                                </span>
+                                            );
+                                        })}
+                                    </>
+                                );
+                            }}
+                        />
+                    </div>
+                    <br />
+                    <div style={{ marginTop: "40px" }}>
+                        <strong> Backend Tech: </strong>
+                        <ReactTypingEffect
+                            text={["Node.js", "Express", "MongoDB", "SQL"]}
+                            cursorRenderer={(cursor) => <>{cursor}</>}
+                            speed={110}
+                            typingDelay={500}
+                            eraseDelay={1000 * 1}
+                            displayTextRenderer={(text, i) => {
+                                return (
+                                    <>
+                                        {text.split("").map((char, i) => {
+                                            const key = `${i}`;
+                                            return (
+                                                <span
+                                                    key={key}
+                                                    style={{ color: "black" }}
+                                                >
+                                                    {char}
+                                                </span>
+                                            );
+                                        })}
+                                    </>
+                                );
+                            }}
+                        />
+                    </div>
                 </div>
             </div>
             <WorksList />
