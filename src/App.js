@@ -11,13 +11,13 @@ import Footer from "./components/Footer";
 function App() {
     const [contactPageProp, setContactPageProp] = useState(null);
     useEffect(() => {
-        if (window.location.pathname == "/contact") {
+        if (window.location.pathname === "/contact") {
             setContactPageProp("contactPage");
         }
         return () => {
             setContactPageProp("contactPage");
         };
-    });
+    }, []);
     return (
         <div className="App">
             <BrowserRouter>

@@ -9,12 +9,12 @@ export default function Contact(props) {
 
     const [contactPage, setContactPage] = useState("");
     useEffect(() => {
-        if (window.location.pathname == "/contact") {
+        if (contactPageProp !== null) {
             setContactPage(contactPageProp);
         } else {
-            setContactPage("");
+            setContactPage("contactPage");
         }
-    });
+    }, [contactPageProp]);
 
     function sendEmail(e) {
         e.preventDefault();
@@ -43,7 +43,12 @@ export default function Contact(props) {
 
     return (
         <div className={contactContainer}>
-            <h3>👇🏼 Contact me</h3>
+            <h3>
+                <span role="img" aria-label="finger">
+                    👇🏼
+                </span>
+                Contact me
+            </h3>
             <form className="contact-form" onSubmit={sendEmail}>
                 <input type="hidden" name="contact_number" />
                 <input
@@ -60,7 +65,7 @@ export default function Contact(props) {
                 />
                 <textarea
                     name="message"
-                    placeholder=" Please write a message to me 👨🏽‍💻"
+                    placeholder=" Please write a message to me"
                     required
                 />
                 <input className="send-btn" type="submit" value="Send" />

@@ -5,7 +5,7 @@ export default function Header() {
     const [moveHeader, setMoveHeader] = useState("App-header-start");
     useEffect(() => {
         setMoveHeader("App-header");
-    });
+    }, []);
     return (
         <header className={moveHeader}>
             <div className="container">
