@@ -1,9 +1,10 @@
 import React from "react";
 import "./Resume.css";
-
+import Test from "./Test.mdx"
 export default function Resume() {
     return (
         <div className="resume__container">
+            <Test/>
             <div className="title__resume">
                 <picture>
                     <img src="/avatar.jpg" alt="avatar" />
@@ -57,14 +58,16 @@ export default function Resume() {
                     <h2>STACK</h2>
 
                     <ul>
-                        <li>React.js, Redux, Vue.js, jQuery, Flexbox, Grid</li>
+                        <li>
+                            React.js, Redux, Vue.js, jQuery, CSS, Flexbox, Grid
+                        </li>
                         <li>
                             Node.js, Express, PostgreSQL, REST, web sockets,{" "}
                             <br />
                             Handlebars
                         </li>
                         <li>Jest, React Testing Library</li>
-                        <li>Git,GitHub</li>
+                        <li>Git, GitHub</li>
                         <li>AWS , Heroku</li>
                     </ul>
                 </div>
