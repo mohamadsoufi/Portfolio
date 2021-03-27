@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import WorksList from "./WorksList/WorksList";
 import "./Home.css";
 import ReactTypingEffect from "react-typing-effect";
+import ScrollAnimation from "react-animate-on-scroll";
+
 export default function Home() {
     return (
         <Fragment>
@@ -109,11 +111,13 @@ export default function Home() {
                 </div>
             </div>
             <WorksList />
-            <h2 className="popup">
-                <span role="img" aria-label="finger">
-                    <a href="/contact"> contact me</a> 💬
-                </span>
-            </h2>
+            <ScrollAnimation delay={700} animateIn="fadeIn" animateOnce={true}>
+                <h2 className="popup">
+                    <span role="img" aria-label="finger">
+                        <a href="/contact"> contact me</a> 💬
+                    </span>
+                </h2>
+            </ScrollAnimation>
         </Fragment>
     );
 }

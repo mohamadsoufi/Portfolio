@@ -69,9 +69,10 @@
 }
 
 .contactPage form textarea {
-    width: 60%;
-    height: 90px;
-    margin-top: 20px;
+    margin: 20px auto;
+    height: 48px;
+    width: 762px;
+    max-width: 70%;
 }
 
 .contactPage form input:last-child {

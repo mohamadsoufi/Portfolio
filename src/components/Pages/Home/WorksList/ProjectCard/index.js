@@ -1,7 +1,5 @@
 import React from "react";
 import "./ProjectCard.css";
-// import Aos from "aos";
-// import ScrollAnimation from "react-animate-on-scroll";
 
 import { Link } from "react-router-dom";
 
@@ -14,13 +12,6 @@ export default function ProjectCard({
     bgColor,
     _id,
 }) {
-    // useEffect(() => {
-    //     Aos.init({
-    //         duration: 800,
-    //         // animation: slide-left
-    //     });
-    // }, []);
-
     return (
         <Link to={`/project/${title}`}>
             <div

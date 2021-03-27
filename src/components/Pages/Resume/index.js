@@ -1,10 +1,8 @@
 import React from "react";
 import "./Resume.css";
-import Test from "./Test.mdx"
 export default function Resume() {
     return (
         <div className="resume__container">
-            <Test/>
             <div className="title__resume">
                 <picture>
                     <img src="/avatar.jpg" alt="avatar" />
