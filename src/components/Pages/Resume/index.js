@@ -38,7 +38,7 @@ export default function Resume() {
 
                     <p>
                         Mail: mohamad.soufi@outlook.com
-                        <br /> Mobile: +49 157-864-33517 <br /> Adress: Berlin,
+                        <br /> Mobile: +49 157-864-33517 <br /> Address: Berlin,
                         Germany
                     </p>
                     <br />
